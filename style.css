@@ -4,9 +4,73 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: rgb(39, 38, 38);
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slide li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: rgb(202, 196, 196);
+    bottom: 10px;
+    cursor: pointer;
+    display:block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index:10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) {
+    left: 40px;
+}
+
+.slider li:nth-child(3) {
+    left: 70px;
+}
+
+.slider li:nth-child(4) {
+    left: 100px;
+}
+
+
+
 .container {
     width: 100%;
-    min-height: 100vg;
+    min-height: 50vg;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
@@ -23,7 +87,12 @@
     width: 50px;
     cursor: pointer;
     margin: 30px 0;
+    transition: width 1s;
 }
+
+.logo:hover{
+    width: 60px;
+  }
 
 .menu-icon {
     width: 25;
@@ -32,7 +101,7 @@
 
 nav {
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 nav ul li {
@@ -43,7 +112,7 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-size: 14px;
 }
 
@@ -51,7 +120,13 @@ nav ul li a:hover {
     color: red;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
 
+}
 
 
 
