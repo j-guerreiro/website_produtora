@@ -86,8 +86,8 @@ nav ul li a:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 100%;
+  position: inherit;
   margin: auto;
 }
 
@@ -176,7 +176,6 @@ nav ul li a:hover {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 
 
 
