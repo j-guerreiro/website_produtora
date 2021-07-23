@@ -24,18 +24,18 @@ body {
 }
 
 .logo{
-    width: 50px;
+    width: 70px;
     cursor: pointer;
     margin: 30px 0;
     transition: width 1s;
 }
 
 .logo:hover{
-    width: 60px;
+    width: 80px;
   }
 
 .menu-icon {
-    width: 50px;
+    width: 40px;
     cursor: pointer;
     margin: 30px 0;
     transition: width 1s;
@@ -156,7 +156,7 @@ nav ul li a:hover {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #000000;
 }
 
 /* Fading animation */
